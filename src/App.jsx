@@ -6,20 +6,39 @@ function App() {
     {
       name: "Oversized Black Tee",
       price: "LKR 3,490",
+      tag: "NEW DROP",
       image:
         "https://images.unsplash.com/photo-1521572163474-6864f9cf17ab"
     },
     {
-      name: "Urban Streetwear Tee",
+      name: "Streetwear White Tee",
       price: "LKR 3,990",
+      tag: "POPULAR",
       image:
         "https://images.unsplash.com/photo-1503341504253-dff4815485f1"
     },
     {
-      name: "Premium Collection",
+      name: "Premium Signature Tee",
       price: "LKR 4,490",
+      tag: "LIMITED",
       image:
         "https://images.unsplash.com/photo-1523381294911-8d3cead13475"
+    }
+  ];
+
+
+  const reviews = [
+    {
+      name: "Customer",
+      text: "Amazing quality and perfect oversized fit."
+    },
+    {
+      name: "Customer",
+      text: "Premium feel with fast delivery."
+    },
+    {
+      name: "Customer",
+      text: "CLOZEE has the best streetwear style."
     }
   ];
 
@@ -40,15 +59,18 @@ function App() {
 
         <nav>
           <a href="#home">HOME</a>
-          <a href="#collection">COLLECTION</a>
+          <a href="#shop">SHOP</a>
+          <a href="#about">ABOUT</a>
           <a href="#contact">CONTACT</a>
         </nav>
+
 
       </header>
 
 
 
-      {/* HERO SECTION */}
+
+      {/* HERO */}
 
       <section className="hero" id="home">
 
@@ -69,10 +91,9 @@ function App() {
           </p>
 
 
-
           <a 
           className="shop-btn"
-          href="#collection"
+          href="#shop"
           >
             SHOP COLLECTION
           </a>
@@ -89,14 +110,10 @@ function App() {
       {/* PRODUCTS */}
 
 
-      <section 
-      className="products"
-      id="collection"
-      >
-
+      <section className="products" id="shop">
 
         <h2>
-          Latest Collection
+          NEW COLLECTION
         </h2>
 
 
@@ -108,6 +125,11 @@ function App() {
 
 
           <div className="card" key={index}>
+
+
+            <span>
+              {item.tag}
+            </span>
 
 
             <img 
@@ -127,15 +149,20 @@ function App() {
 
 
 
+            <div className="sizes">
+              S &nbsp; M &nbsp; L &nbsp; XL &nbsp; XXL
+            </div>
+
+
+
             <a
             className="order"
             href="https://wa.me/94722884573?text=Hi%20CLOZEE,%20I%20want%20to%20order"
             target="_blank"
             rel="noopener noreferrer"
             >
-              📲 Order on WhatsApp
+              📲 Order WhatsApp
             </a>
-
 
 
           </div>
@@ -152,78 +179,206 @@ function App() {
 
 
 
-      {/* SOCIAL */}
+
+      {/* WHY CLOZEE */}
 
 
-      <section className="social">
+      <section className="features">
 
-  <h2>
-    Follow CLOZEE
-  </h2>
-
-  <a
-  className="instagram"
-  href="https://instagram.com/clozee.lk"
-  target="_blank"
-  rel="noopener noreferrer"
-  >
-    📸 Follow Instagram
-  </a>
-
-</section>
+        <h2>
+          WHY CLOZEE
+        </h2>
 
 
-{/* CONTACT SECTION */}
+        <div className="feature-grid">
 
-<section className="contact">
-
-  <h2>
-    Contact CLOZEE
-  </h2>
-
-  <p>
-    Connect with us for orders and support
-  </p>
+          <div>
+            🚚
+            <h3>Fast Delivery</h3>
+            <p>Islandwide delivery available</p>
+          </div>
 
 
-  <div className="contact-buttons">
+          <div>
+            👕
+            <h3>Premium Quality</h3>
+            <p>Comfortable luxury streetwear</p>
+          </div>
 
 
-    <a
-    href="https://wa.me/94722884573?text=Hi%20CLOZEE"
-    target="_blank"
-    rel="noopener noreferrer"
-    >
-      📲 WhatsApp
-    </a>
+          <div>
+            🔄
+            <h3>Easy Exchange</h3>
+            <p>Customer friendly service</p>
+          </div>
 
 
-    <a
-    href="https://instagram.com/clozee.lk"
-    target="_blank"
-    rel="noopener noreferrer"
-    >
-      📸 Instagram
-    </a>
+        </div>
 
-
-    <a
-    href="https://facebook.com/YOURFACEBOOK"
-    target="_blank"
-    rel="noopener noreferrer"
-    >
-      👍 Facebook
-    </a>
-
-
-    <a href="mailto:clozeelk@gmail.com">
-      ✉️ Gmail
-    </a>
-
-
-  </div>
 
       </section>
+
+
+
+
+
+      {/* ABOUT */}
+
+
+      <section className="about" id="about">
+
+        <h2>
+          ABOUT CLOZEE
+        </h2>
+
+
+        <p>
+          CLOZEE represents confidence, comfort and individuality.
+          Every piece is designed to help you wear your identity.
+        </p>
+
+
+      </section>
+
+
+
+
+
+      {/* LIMITED DROP */}
+
+
+      <section className="drop">
+
+        <h2>
+          LIMITED DROP
+        </h2>
+
+
+        <p>
+          Exclusive collections. Limited pieces.
+        </p>
+
+
+        <a href="#shop">
+          SHOP NOW
+        </a>
+
+
+      </section>
+
+
+
+
+
+      {/* REVIEWS */}
+
+
+      <section className="reviews">
+
+        <h2>
+          CUSTOMER LOVE
+        </h2>
+
+
+        <div className="review-grid">
+
+
+        {reviews.map((review,index)=>(
+
+          <div key={index}>
+
+            ⭐⭐⭐⭐⭐
+
+            <p>
+              {review.text}
+            </p>
+
+            <h4>
+              - {review.name}
+            </h4>
+
+          </div>
+
+        ))}
+
+
+        </div>
+
+
+      </section>
+
+
+
+
+
+      {/* CONTACT */}
+
+
+      <section className="contact" id="contact">
+
+        <h2>
+          CONNECT WITH CLOZEE
+        </h2>
+
+
+        <div className="contact-buttons">
+
+
+          <a
+          href="https://wa.me/94722884573"
+          target="_blank"
+          >
+            📲 WhatsApp
+          </a>
+
+
+          <a
+          href="https://instagram.com/clozee.lk"
+          target="_blank"
+          >
+            📸 Instagram
+          </a>
+
+
+          <a
+          href="mailto:clozeelk@gmail.com"
+          >
+            ✉️ Gmail
+          </a>
+
+
+          <a
+          href="https://facebook.com"
+          target="_blank"
+          >
+            👍 Facebook
+          </a>
+
+
+        </div>
+
+
+      </section>
+
+
+
+
+
+      <footer>
+
+        © 2026 CLOZEE. All Rights Reserved.
+
+      </footer>
+
+
+
+      <a
+      className="floating-whatsapp"
+      href="https://wa.me/94722884573"
+      target="_blank"
+      >
+        💬
+      </a>
 
 
     </div>
@@ -231,5 +386,6 @@ function App() {
   );
 
 }
+
 
 export default App;
