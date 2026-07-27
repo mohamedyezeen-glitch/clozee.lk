@@ -29,6 +29,8 @@ function App() {
     <div className="website">
 
 
+      {/* HEADER */}
+
       <header>
 
         <div className="logo">
@@ -37,47 +39,66 @@ function App() {
 
 
         <nav>
-          <a>HOME</a>
-          <a>MEN</a>
-          <a>WOMEN</a>
-          <a>COLLECTION</a>
+          <a href="#home">HOME</a>
+          <a href="#collection">COLLECTION</a>
+          <a href="#contact">CONTACT</a>
         </nav>
 
       </header>
 
 
 
-      <section className="hero">
+      {/* HERO SECTION */}
+
+      <section className="hero" id="home">
 
         <div className="hero-content">
 
-          <h1>CLOZEE</h1>
+          <h1>
+            CLOZEE
+          </h1>
+
 
           <h2>
             WEAR YOUR IDENTITY
           </h2>
+
 
           <p>
             Premium streetwear created for the next generation.
           </p>
 
 
-          <button>
-            SHOP NOW
-          </button>
+
+          <a 
+          className="shop-btn"
+          href="#collection"
+          >
+            SHOP COLLECTION
+          </a>
 
 
         </div>
+
 
       </section>
 
 
 
-      <section className="products">
+
+      {/* PRODUCTS */}
+
+
+      <section 
+      className="products"
+      id="collection"
+      >
+
 
         <h2>
           Latest Collection
         </h2>
+
 
 
         <div className="product-grid">
@@ -85,10 +106,14 @@ function App() {
 
         {products.map((item,index)=>(
 
+
           <div className="card" key={index}>
 
 
-            <img src={item.image} alt="clozee"/>
+            <img 
+            src={item.image}
+            alt={item.name}
+            />
 
 
             <h3>
@@ -101,49 +126,79 @@ function App() {
             </p>
 
 
-            <a 
+
+            <a
             className="order"
-            href="https://wa.me/94722884573"
+            href="https://wa.me/94722884573?text=Hi%20CLOZEE,%20I%20want%20to%20order"
             target="_blank"
+            rel="noopener noreferrer"
             >
-              📲 Order WhatsApp
+              📲 Order on WhatsApp
             </a>
 
 
+
           </div>
+
 
         ))}
 
 
         </div>
 
+
       </section>
 
 
 
 
-      <section className="social">
+      {/* SOCIAL */}
+
+
+      <section 
+      className="social"
+      id="contact"
+      >
+
 
         <h2>
           Follow CLOZEE
         </h2>
 
 
-        <a 
+
+        <a
+        className="instagram"
         href="https://instagram.com/clozee.lk"
         target="_blank"
+        rel="noopener noreferrer"
         >
-          📸 Instagram
+          📸 Follow Instagram
         </a>
+
 
 
       </section>
 
 
 
+      {/* FLOATING WHATSAPP */}
+
+      <a
+      className="floating-whatsapp"
+      href="https://wa.me/94722884573?text=Hi%20CLOZEE"
+      target="_blank"
+      rel="noopener noreferrer"
+      >
+        💬
+      </a>
+
+
+
     </div>
 
   );
+
 }
 
 
