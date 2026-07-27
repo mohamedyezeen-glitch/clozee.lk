@@ -103,7 +103,7 @@ function App() {
 
             <a 
             className="order"
-            href="https://wa.me/YOURNUMBER"
+            href="https://wa.me/94722884573"
             target="_blank"
             >
               📲 Order WhatsApp
