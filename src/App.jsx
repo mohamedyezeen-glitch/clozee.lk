@@ -1,32 +1,33 @@
 import "./App.css";
 
 function App() {
-
   return (
-    <div>
+    <div className="home">
 
       <nav>
-        <h1>CLOZEE.LK</h1>
+        <h1>CLOZEE</h1>
 
-        <div>
-          <span>Men</span>
-          <span>Women</span>
-          <span>New Arrivals</span>
+        <div className="menu">
+          <span>MEN</span>
+          <span>WOMEN</span>
+          <span>COLLECTION</span>
+          <span>CONTACT</span>
         </div>
       </nav>
 
 
-      <section className="banner">
+      <section className="hero">
 
-        <div>
-          <h2>CLOZEE</h2>
+        <div className="hero-content">
+
+          <h2>WEAR YOUR<br/>IDENTITY</h2>
 
           <p>
-            Premium Fashion For The Modern Generation
+            Premium streetwear designed for the next generation.
           </p>
 
           <button>
-            Shop Now
+            SHOP COLLECTION
           </button>
 
         </div>
@@ -34,30 +35,13 @@ function App() {
       </section>
 
 
-      <section className="products">
+      <section className="about">
 
-        <h2>Latest Collection</h2>
+        <h2>CLOZEE</h2>
 
-        <div className="product-grid">
-
-          <div className="card">
-            <h3>Oversized Collection</h3>
-            <p>Premium Streetwear</p>
-          </div>
-
-
-          <div className="card">
-            <h3>New Arrivals</h3>
-            <p>Fresh Styles Coming Soon</p>
-          </div>
-
-
-          <div className="card">
-            <h3>Signature Drops</h3>
-            <p>Designed By CLOZEE</p>
-          </div>
-
-        </div>
+        <p>
+          More than clothing. A lifestyle.
+        </p>
 
       </section>
 
