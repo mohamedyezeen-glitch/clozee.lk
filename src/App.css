@@ -7,23 +7,21 @@ box-sizing:border-box;
 
 body{
 
-font-family:Arial, sans-serif;
 background:#000;
 color:white;
+font-family:Arial, Helvetica, sans-serif;
 
 }
 
 
 .website{
-
 width:100%;
-
+overflow:hidden;
 }
 
 
 
 /* HEADER */
-
 
 header{
 
@@ -37,7 +35,7 @@ align-items:center;
 
 padding:35px 70px;
 
-z-index:10;
+z-index:5;
 
 }
 
@@ -45,25 +43,23 @@ z-index:10;
 .logo{
 
 font-size:45px;
-font-weight:bold;
 letter-spacing:12px;
+font-weight:bold;
 
 }
-
 
 
 nav a{
 
-margin-left:30px;
-
 color:white;
-
 text-decoration:none;
 
-letter-spacing:2px;
+margin-left:30px;
+
+font-size:14px;
+letter-spacing:3px;
 
 }
-
 
 
 
@@ -75,9 +71,7 @@ letter-spacing:2px;
 height:100vh;
 
 display:flex;
-
 justify-content:center;
-
 align-items:center;
 
 text-align:center;
@@ -87,65 +81,53 @@ background:
 
 linear-gradient(
 rgba(0,0,0,.55),
-rgba(0,0,0,.8)
+rgba(0,0,0,.85)
 ),
 
 url("https://images.unsplash.com/photo-1551488831-00ddcb6c6bd3");
 
 
 background-size:cover;
-
 background-position:center;
 
 }
 
 
 
-.hero-text h1{
+.hero h1{
 
 font-size:120px;
-
-letter-spacing:20px;
+letter-spacing:25px;
 
 }
 
 
-
-.hero-text h2{
+.hero h2{
 
 font-size:40px;
-
 letter-spacing:8px;
 
 }
 
 
-
-.hero-text p{
+.hero p{
 
 font-size:20px;
-
-margin-top:20px;
-
-color:#ccc;
+margin-top:25px;
+color:#ddd;
 
 }
 
 
-
 button{
 
-margin-top:35px;
+margin-top:40px;
 
 padding:18px 50px;
 
 border:none;
 
-background:white;
-
 font-weight:bold;
-
-cursor:pointer;
 
 }
 
@@ -156,18 +138,16 @@ cursor:pointer;
 
 .products{
 
-padding:80px 50px;
+padding:90px 60px;
 
 text-align:center;
 
 }
 
 
-
 .products h2{
 
 font-size:50px;
-
 letter-spacing:8px;
 
 }
@@ -176,9 +156,9 @@ letter-spacing:8px;
 
 .product-grid{
 
-display:flex;
+display:grid;
 
-justify-content:center;
+grid-template-columns:repeat(3,1fr);
 
 gap:30px;
 
@@ -194,8 +174,6 @@ background:#111;
 
 padding:20px;
 
-width:300px;
-
 border-radius:15px;
 
 }
@@ -206,7 +184,7 @@ border-radius:15px;
 
 width:100%;
 
-height:350px;
+height:380px;
 
 object-fit:cover;
 
@@ -223,7 +201,6 @@ margin-top:20px;
 }
 
 
-
 .card p{
 
 font-size:20px;
@@ -234,8 +211,7 @@ margin:15px;
 
 
 
-
-.whatsapp{
+.order{
 
 display:block;
 
@@ -245,9 +221,9 @@ color:white;
 
 padding:15px;
 
-text-decoration:none;
+border-radius:30px;
 
-border-radius:5px;
+text-decoration:none;
 
 }
 
@@ -258,7 +234,7 @@ border-radius:5px;
 
 .social{
 
-padding:70px;
+padding:80px;
 
 text-align:center;
 
@@ -270,7 +246,7 @@ text-align:center;
 
 display:inline-block;
 
-margin-top:20px;
+margin-top:25px;
 
 background:white;
 
@@ -278,8 +254,130 @@ color:black;
 
 padding:15px 40px;
 
+border-radius:30px;
+
 text-decoration:none;
 
-border-radius:5px;
+}
+
+
+
+/* MOBILE VERSION */
+
+
+@media(max-width:768px){
+
+
+header{
+
+padding:25px;
+
+flex-direction:column;
+
+}
+
+
+.logo{
+
+font-size:32px;
+
+letter-spacing:8px;
+
+}
+
+
+nav{
+
+margin-top:20px;
+
+}
+
+
+nav a{
+
+font-size:11px;
+
+margin:8px;
+
+}
+
+
+
+.hero h1{
+
+font-size:55px;
+
+letter-spacing:12px;
+
+}
+
+
+
+.hero h2{
+
+font-size:22px;
+
+letter-spacing:4px;
+
+}
+
+
+
+.hero p{
+
+font-size:15px;
+
+padding:0 20px;
+
+}
+
+
+
+.products{
+
+padding:60px 20px;
+
+}
+
+
+
+.products h2{
+
+font-size:32px;
+
+}
+
+
+
+.product-grid{
+
+grid-template-columns:1fr;
+
+}
+
+
+
+.card img{
+
+height:330px;
+
+}
+
+
+
+.order{
+
+font-size:15px;
+
+}
+
+
+
+.social{
+
+padding:50px 20px;
+
+}
+
 
 }

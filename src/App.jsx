@@ -4,19 +4,22 @@ function App() {
 
   const products = [
     {
-      name: "CLOZEE Oversized Black Tee",
+      name: "Oversized Black Tee",
       price: "LKR 3,490",
-      image: "https://images.unsplash.com/photo-1521572163474-6864f9cf17ab"
+      image:
+        "https://images.unsplash.com/photo-1521572163474-6864f9cf17ab"
     },
     {
-      name: "CLOZEE Streetwear Edition",
+      name: "Urban Streetwear Tee",
       price: "LKR 3,990",
-      image: "https://images.unsplash.com/photo-1503341504253-dff4815485f1"
+      image:
+        "https://images.unsplash.com/photo-1503341504253-dff4815485f1"
     },
     {
-      name: "CLOZEE Premium Collection",
+      name: "Premium Collection",
       price: "LKR 4,490",
-      image: "https://images.unsplash.com/photo-1523381294911-8d3cead13475"
+      image:
+        "https://images.unsplash.com/photo-1523381294911-8d3cead13475"
     }
   ];
 
@@ -34,12 +37,11 @@ function App() {
 
 
         <nav>
+          <a>HOME</a>
           <a>MEN</a>
           <a>WOMEN</a>
           <a>COLLECTION</a>
-          <a>CONTACT</a>
         </nav>
-
 
       </header>
 
@@ -47,19 +49,16 @@ function App() {
 
       <section className="hero">
 
-        <div className="hero-text">
+        <div className="hero-content">
 
-          <h1>
-            CLOZEE
-          </h1>
+          <h1>CLOZEE</h1>
 
           <h2>
             WEAR YOUR IDENTITY
           </h2>
 
-
           <p>
-            Premium streetwear designed for the next generation.
+            Premium streetwear created for the next generation.
           </p>
 
 
@@ -70,62 +69,53 @@ function App() {
 
         </div>
 
-
       </section>
 
 
 
-
       <section className="products">
-
 
         <h2>
           Latest Collection
         </h2>
 
 
-
         <div className="product-grid">
 
 
-          {products.map((product,index)=>(
+        {products.map((item,index)=>(
 
-            <div className="card" key={index}>
-
-
-              <img 
-              src={product.image}
-              alt={product.name}
-              />
+          <div className="card" key={index}>
 
 
-              <h3>
-                {product.name}
-              </h3>
+            <img src={item.image} alt="clozee"/>
 
 
-              <p>
-                {product.price}
-              </p>
+            <h3>
+              {item.name}
+            </h3>
 
 
-              <a 
-              className="whatsapp"
-              href="https://wa.me/94722884573"
-              target="_blank"
-              >
-                Order on WhatsApp
-              </a>
+            <p>
+              {item.price}
+            </p>
 
 
-            </div>
+            <a 
+            className="order"
+            href="https://wa.me/YOURNUMBER"
+            target="_blank"
+            >
+              📲 Order WhatsApp
+            </a>
 
 
-          ))}
+          </div>
+
+        ))}
 
 
         </div>
-
 
       </section>
 
@@ -134,17 +124,16 @@ function App() {
 
       <section className="social">
 
-
         <h2>
           Follow CLOZEE
         </h2>
 
 
         <a 
-        href="https://instagram.com/clozee.lk"
+        href="https://instagram.com/YOURINSTAGRAM"
         target="_blank"
         >
-          Instagram 📸
+          📸 Instagram
         </a>
 
 
