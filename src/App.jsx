@@ -130,7 +130,7 @@ function App() {
 
 
         <a 
-        href="https://instagram.com/YOURINSTAGRAM"
+        href="https://instagram.com/clozee.lk"
         target="_blank"
         >
           📸 Instagram
