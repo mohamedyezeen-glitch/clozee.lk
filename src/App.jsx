@@ -348,12 +348,12 @@ function App() {
 
 
           <a
-          href="https://facebook.com"
+          href="https://www.facebook.com/profile.php?id=61573784430882"
           target="_blank"
+          rel="noopener noreferrer"
           >
-            👍 Facebook
+             👍 Facebook
           </a>
-
 
         </div>
 
