@@ -155,44 +155,75 @@ function App() {
       {/* SOCIAL */}
 
 
-      <section 
-      className="social"
-      id="contact"
-      >
+      <section className="social">
+
+  <h2>
+    Follow CLOZEE
+  </h2>
+
+  <a
+  className="instagram"
+  href="https://instagram.com/clozee.lk"
+  target="_blank"
+  rel="noopener noreferrer"
+  >
+    📸 Follow Instagram
+  </a>
+
+</section>
 
 
-        <h2>
-          Follow CLOZEE
-        </h2>
+{/* CONTACT SECTION */}
+
+<section className="contact">
+
+  <h2>
+    Contact CLOZEE
+  </h2>
+
+  <p>
+    Connect with us for orders and support
+  </p>
 
 
-
-        <a
-        className="instagram"
-        href="https://instagram.com/clozee.lk"
-        target="_blank"
-        rel="noopener noreferrer"
-        >
-          📸 Follow Instagram
-        </a>
+  <div className="contact-buttons">
 
 
+    <a
+    href="https://wa.me/94722884573?text=Hi%20CLOZEE"
+    target="_blank"
+    rel="noopener noreferrer"
+    >
+      📲 WhatsApp
+    </a>
+
+
+    <a
+    href="https://instagram.com/clozee.lk"
+    target="_blank"
+    rel="noopener noreferrer"
+    >
+      📸 Instagram
+    </a>
+
+
+    <a
+    href="https://facebook.com/YOURFACEBOOK"
+    target="_blank"
+    rel="noopener noreferrer"
+    >
+      👍 Facebook
+    </a>
+
+
+    <a href="mailto:clozeelk@gmail.com">
+      ✉️ Gmail
+    </a>
+
+
+  </div>
 
       </section>
-
-
-
-      {/* FLOATING WHATSAPP */}
-
-      <a
-      className="floating-whatsapp"
-      href="https://wa.me/94722884573?text=Hi%20CLOZEE"
-      target="_blank"
-      rel="noopener noreferrer"
-      >
-        💬
-      </a>
-
 
 
     </div>
@@ -200,6 +231,5 @@ function App() {
   );
 
 }
-
 
 export default App;
