@@ -7,22 +7,19 @@ function App() {
       name: "Oversized Black Tee",
       price: "LKR 3,490",
       tag: "NEW DROP",
-      image:
-        "https://images.unsplash.com/photo-1521572163474-6864f9cf17ab"
+      image: "/images/tshirt.jpg.jpg"
     },
     {
       name: "Streetwear White Tee",
       price: "LKR 3,990",
       tag: "POPULAR",
-      image:
-        "https://images.unsplash.com/photo-1503341504253-dff4815485f1"
+      image: "/images/white.png"
     },
     {
       name: "Premium Signature Tee",
       price: "LKR 4,490",
       tag: "LIMITED",
-      image:
-        "https://images.unsplash.com/photo-1523381294911-8d3cead13475"
+      image: "/images/whitetshirt.png"
     }
   ];
 
@@ -56,7 +53,6 @@ function App() {
           CLOZEE
         </div>
 
-
         <nav>
           <a href="#home">HOME</a>
           <a href="#shop">SHOP</a>
@@ -64,9 +60,7 @@ function App() {
           <a href="#contact">CONTACT</a>
         </nav>
 
-
       </header>
-
 
 
 
@@ -76,39 +70,25 @@ function App() {
 
         <div className="hero-content">
 
-          <h1>
-            CLOZEE
-          </h1>
+          <h1>CLOZEE</h1>
 
-
-          <h2>
-            WEAR YOUR IDENTITY
-          </h2>
-
+          <h2>WEAR YOUR IDENTITY</h2>
 
           <p>
             Premium streetwear created for the next generation.
           </p>
 
-
-          <a 
-          className="shop-btn"
-          href="#shop"
-          >
+          <a className="shop-btn" href="#shop">
             SHOP COLLECTION
           </a>
 
-
         </div>
-
 
       </section>
 
 
 
-
       {/* PRODUCTS */}
-
 
       <section className="products" id="shop">
 
@@ -117,12 +97,10 @@ function App() {
         </h2>
 
 
-
         <div className="product-grid">
 
 
         {products.map((item,index)=>(
-
 
           <div className="card" key={index}>
 
@@ -133,8 +111,8 @@ function App() {
 
 
             <img 
-            src={item.image}
-            alt={item.name}
+              src={item.image}
+              alt={item.name}
             />
 
 
@@ -179,9 +157,7 @@ function App() {
 
 
 
-
       {/* WHY CLOZEE */}
-
 
       <section className="features">
 
@@ -221,9 +197,7 @@ function App() {
 
 
 
-
       {/* ABOUT */}
-
 
       <section className="about" id="about">
 
@@ -243,9 +217,7 @@ function App() {
 
 
 
-
       {/* LIMITED DROP */}
-
 
       <section className="drop">
 
@@ -269,9 +241,7 @@ function App() {
 
 
 
-
       {/* REVIEWS */}
-
 
       <section className="reviews">
 
@@ -310,9 +280,7 @@ function App() {
 
 
 
-
       {/* CONTACT */}
-
 
       <section className="contact" id="contact">
 
@@ -327,6 +295,7 @@ function App() {
           <a
           href="https://wa.me/94722884573"
           target="_blank"
+          rel="noopener noreferrer"
           >
             📲 WhatsApp
           </a>
@@ -335,6 +304,7 @@ function App() {
           <a
           href="https://instagram.com/clozee.lk"
           target="_blank"
+          rel="noopener noreferrer"
           >
             📸 Instagram
           </a>
@@ -355,11 +325,11 @@ function App() {
              👍 Facebook
           </a>
 
+
         </div>
 
 
       </section>
-
 
 
 
@@ -376,6 +346,7 @@ function App() {
       className="floating-whatsapp"
       href="https://wa.me/94722884573"
       target="_blank"
+      rel="noopener noreferrer"
       >
         💬
       </a>
